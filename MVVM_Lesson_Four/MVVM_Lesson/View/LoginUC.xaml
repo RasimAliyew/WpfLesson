@@ -8,6 +8,17 @@
              Background="White"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Button Content="Login"/>
+        <TextBlock 
+            Text="Login User Control" 
+            FontSize="40"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+        <Button
+            Command="{Binding RegisterButton}"
+            Height="50" 
+            Width="350" 
+            Margin="0,200,0,0"
+            FontSize="20"
+            Content="Sign Up"/>
     </Grid>
 </UserControl>

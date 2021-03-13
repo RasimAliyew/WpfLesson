@@ -16,16 +16,21 @@
             <Views:RegisterUC/>
         </DataTemplate>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1">
-        <Button Padding="15" Margin="30" Content="Register" />
-        <Button Padding="15" Margin="30" Content="Login"/>
-        </StackPanel>
-        <ContentControl Grid.Row="0" Content="{Binding CurrentVM}"/>
+        <UniformGrid Rows="1">
+           <Button Command="{Binding RegisterButton}" 
+                   Content="Register" />
+            
+           <Button Command="{Binding LoginButton}"   
+                   Content="Login"/>
+        </UniformGrid>
+     
+        <ContentControl Grid.Row="1" Content="{Binding CurrentVM}"/>
     </Grid>
 </Window>
+ 

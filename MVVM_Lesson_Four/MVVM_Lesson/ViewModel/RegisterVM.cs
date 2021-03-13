@@ -8,5 +8,6 @@ namespace MVVM_Lesson.ViewModel
 {
     class RegisterVM : ViewModelBase
     {
+        
     }
 }

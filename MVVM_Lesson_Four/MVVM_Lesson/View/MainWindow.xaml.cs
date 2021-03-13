@@ -25,5 +25,7 @@ namespace MVVM_Lesson.View
             InitializeComponent();
             DataContext = new MainVM(); 
         }
+
+ 
     }
 }
